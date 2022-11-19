@@ -1,0 +1,92 @@
+@import url(
+	'https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Montserrat", sans-serif;
+}
+
+/* Handles Navigation Appearance */
+header,
+.logo,
+.navigate_links,
+nav a {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	color: darkslategray;
+	text-decoration: none;
+	text-transform: uppercase;
+	/* margin-right: auto; */
+	order: 3;
+	margin-left: auto;
+}
+
+/* Handles Size of Header */
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 10%;
+	order: 1;
+}
+
+main,
+main p,
+main h1 {
+	text-align: center;
+	font-weight: 800;
+}
+
+/* Space Between Link Buttons in Header */
+.navigate_links {
+	list-style: none;
+}
+
+.navigate_links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+/* Space Under Header Nav Buttons */
+.navigate_links li a {
+	transition: all .25s ease-in-out 0s;
+}
+
+/* Space just after Home button */
+.navigate_links li:nth-child(1) {
+	padding: 0px 20px 0px 0px;
+}
+
+/* Hover Effect */
+.navigate_links li a:hover {
+	color: lightslategray;
+	border: 2px solid lightslategray;
+	box-shadow: 2px 2px 20px lightslategray;
+	border-radius: 4px;
+	margin: 10px;	
+	padding: 12px;
+}
+
+/* Main Gallery Container */
+.container {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 12%;
+}
+
+/* Immediately Under Gallery Images */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+	row-gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
